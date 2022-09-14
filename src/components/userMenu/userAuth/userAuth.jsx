@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { Box, Typography } from '@mui/material';
 
-export const AuthNav = () => {
+export const UserAuth = () => {
   return (
     <Box
       sx={{

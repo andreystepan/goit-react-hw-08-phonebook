@@ -1,5 +1,5 @@
-import { useFetchContactsQuery } from 'redux/contacts/contactsApi'; 
-import { ContactItem } from '../contactItem/contactItem'; 
+import { useFetchContactsQuery } from 'redux/contacts/contactsApi';
+import { ContactItem } from '../ContactItem/contactItem';
 import { PropTypes } from 'prop-types';
 import { ListContacts } from './ContactList.styled';
 import { useSelector } from 'react-redux/es/exports';

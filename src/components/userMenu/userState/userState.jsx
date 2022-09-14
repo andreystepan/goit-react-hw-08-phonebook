@@ -4,7 +4,7 @@ import { authSelectors } from 'redux/auth/selectors';
 import { operations } from 'redux/auth/operations';
 import { Box, Button } from '@mui/material';
 
-export const UserMenu = () => {
+export const UserState = () => {
   const dispatch = useDispatch();
   const user = useSelector(authSelectors.getUser);
   return (
