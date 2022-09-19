@@ -11,7 +11,7 @@ export const UserAuth = () => {
         gap: '8px',
       }}
     >
-      <NavLink to="/register">
+      <NavLink to="/Register">
         <Typography
           sx={{
             p: 2,

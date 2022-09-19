@@ -44,7 +44,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route
-              path="/register"
+              path="/Register"
               element={
                 <PublicRoute
                   restricted
