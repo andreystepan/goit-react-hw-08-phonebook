@@ -1,4 +1,4 @@
-import { ContactForm } from 'components/ContactForm/contactForm';
+import { ContactForm } from 'components/ContactForm';
 import { ContactList } from 'components/Contacts/ContactList/contactList';
 import { Filter } from 'components/Filter/filter';
 import { Box } from '@mui/material';
