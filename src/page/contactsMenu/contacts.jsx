@@ -1,6 +1,6 @@
-import { ContactForm } from 'components/ContactForm';
+import { ContactForm } from 'components/ContactForm/contactForm';
 import { ContactList } from 'components/Contacts/ContactList';
-import { Filter } from 'components/Filter/filter';
+import { Filter } from 'components/Filter';
 import { Box } from '@mui/material';
 
 export const Contacts = () => {
