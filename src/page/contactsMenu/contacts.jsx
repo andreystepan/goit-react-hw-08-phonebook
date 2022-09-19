@@ -1,5 +1,5 @@
 import { ContactForm } from 'components/ContactForm';
-import { ContactList } from 'components/Contacts/ContactList/contactList';
+import { ContactList } from 'components/Contacts/ContactList';
 import { Filter } from 'components/Filter/filter';
 import { Box } from '@mui/material';
 
