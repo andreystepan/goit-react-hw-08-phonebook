@@ -1,11 +1,9 @@
 import { Box } from '@mui/material';
-import { Navigation } from 'components/Navigation';
+import { Navigation } from 'components/Navigation/Navigation';
 import { UserAuth } from 'components/UserMenu/UserAuth/userAuth';
 import { UserState } from 'components/UserMenu/UserState/userState';
 import { useSelector } from 'react-redux';
 import { authSelectors } from 'redux/auth/selectors';
-import { Outlet } from 'react-router-dom';
-import { Suspense } from 'react';
 
 export const AppBar = () => {
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
@@ -15,16 +13,13 @@ export const AppBar = () => {
       sx={{
         display: 'flex',
         justifyContent: 'space-between',
-        borderBottom: '2px dotted grey',
+        backgroundColor: '#3f51b5',
+        boxShadow: 3,
       }}
     >
-      <Suspense fallback={<p> Loading</p>}>
-        <Navigation />
+      <Navigation />
 
-        {isLoggedIn ? <UserState /> : <UserAuth />}
-
-        <Outlet />
-      </Suspense>
+      {isLoggedIn ? <UserState /> : <UserAuth />}
     </Box>
   );
 };

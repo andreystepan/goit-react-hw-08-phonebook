@@ -1,7 +1,7 @@
 import { useFetchContactsQuery } from 'redux/contacts/contactsApi';
 import { ContactItem } from '../ContactItem/contactItem';
 import { PropTypes } from 'prop-types';
-import { ListContacts } from './ContactList.styled';
+import { ListContacts } from './contactList.styled';
 import { useSelector } from 'react-redux/es/exports';
 
 export const ContactList = () => {

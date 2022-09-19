@@ -8,13 +8,13 @@ export const UserState = () => {
   const dispatch = useDispatch();
   const user = useSelector(authSelectors.getUser);
   return (
-    <Box sx={{ p: 1, color: 'lightslategray' }}>
+    <Box sx={{ p: 1, color: 'white' }}>
       <Box as="span" sx={{ mr: '8px' }}>
         Yours to command {user.name}
       </Box>
       <Button
         sx={{
-          color: 'lightslategray',
+          color: 'white',
           border: '2px dotted grey',
         }}
         type="button"

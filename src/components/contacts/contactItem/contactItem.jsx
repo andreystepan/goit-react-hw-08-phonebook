@@ -1,6 +1,8 @@
-import { ItemContact, BtnDelete } from './ContactItem.styled';
+import { ItemContact } from './contactItem.styled';
 import { PropTypes } from 'prop-types';
 import { useDeleteContactMutation } from 'redux/contacts/contactsApi';
+import { Delete } from '@mui/icons-material';
+import { Button } from '@mui/material';
 
 export const ContactItem = ({ id, name, number }) => {
   const [deleteContact] = useDeleteContactMutation();
@@ -8,7 +10,13 @@ export const ContactItem = ({ id, name, number }) => {
   return (
     <ItemContact>
       {name} : {number}
-      <BtnDelete onClick={() => deleteContact(id)}>Delete</BtnDelete>
+      <Button
+        variant="outlined"
+        onClick={() => deleteContact(id)}
+        startIcon={<Delete />}
+      >
+        Delete
+      </Button>
     </ItemContact>
   );
 };

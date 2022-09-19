@@ -15,7 +15,7 @@ export const UserAuth = () => {
         <Typography
           sx={{
             p: 2,
-            color: 'lightslategray',
+            color: 'white',
           }}
         >
           Register
@@ -25,7 +25,7 @@ export const UserAuth = () => {
         <Typography
           sx={{
             p: 2,
-            color: 'lightslategray',
+            color: 'white',
           }}
         >
           Login

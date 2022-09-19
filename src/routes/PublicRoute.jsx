@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { Navigate, Outlet } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { authSelectors } from 'redux/auth/selectors';
 
 export const PublicRoute = ({

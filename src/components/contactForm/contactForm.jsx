@@ -3,10 +3,11 @@ import { useState } from 'react';
 import {
   useFetchContactsQuery,
   useCreateContactMutation,
-} from 'redux/contacts/contactsSlice';
+} from 'redux/contacts/contactsApi';
 import { nanoid } from 'nanoid';
 
-import { Form, Label, BtnAddContact } from './contactForm.styled';
+import { Form, Label } from './contactForm.styled';
+import { TextField, Button } from '@mui/material';
 
 export function ContactForm() {
   const [name, setName] = useState('');
@@ -45,7 +46,9 @@ export function ContactForm() {
     <Form onSubmit={handleSubmit}>
       <Label htmlFor={nameInputId}>
         Name
-        <input
+        <TextField
+          label="Name"
+          variant="outlined"
           id={nameInputId}
           value={name}
           onChange={handleChange}
@@ -58,7 +61,9 @@ export function ContactForm() {
       </Label>
       <Label htmlFor={numberInputId}>
         Number
-        <input
+        <TextField
+          label="Number"
+          variant="outlined"
           id={numberInputId}
           value={number}
           onChange={handleChange}
@@ -69,8 +74,18 @@ export function ContactForm() {
           required
         />
       </Label>
+      <Button
+        variant="contained"
+        color="success"
+        type="submit"
+        sx={{
+          mx: 'auto',
+        }}
+      >
+        Add contact
+      </Button>
 
-      <BtnAddContact type="submit">Add contact</BtnAddContact>
+      {/* <BtnAddContact type="submit">Add contact</BtnAddContact> */}
     </Form>
   );
 }

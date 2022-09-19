@@ -14,7 +14,7 @@ export const Navigation = () => {
             sx={{
               p: 2,
               display: 'block',
-              color: 'green',
+              color: 'white',
             }}
           >
             Contacts
