@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux';
 import { authSelectors } from 'redux/auth/selectors';
 
 const Contacts = lazy(() =>
-  import('../page/contactsMenu/contacts').then(module => ({
+  import('../page/contactsMenu').then(module => ({
     ...module,
     default: module.Contacts,
   }))
