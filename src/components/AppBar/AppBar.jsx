@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import { Navigation } from 'components/Navigation/Navigation';
-import { UserAuth } from 'components/UserMenu/UserAuth/userAuth';
-import { UserState } from 'components/UserMenu/UserState/userState';
+import { UserAuth } from 'components/UserMenu/UserAuth';
+import { UserState } from 'components/UserMenu/UserState';
 import { useSelector } from 'react-redux';
 import { authSelectors } from 'redux/auth/selectors';
 
