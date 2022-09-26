@@ -1,4 +1,4 @@
-import { ContactForm } from 'components/ContactForm';
+// import { ContactForm } from 'components/ContactForm';
 import { ContactList } from 'components/Contacts/ContactList';
 import { Filter } from 'components/Filter';
 import { Box } from '@mui/material';
@@ -11,7 +11,7 @@ export const Contacts = () => {
         mt: 2,
       }}
     >
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Filter />
       <ContactList />
     </Box>
